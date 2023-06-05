@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="decription" content="My website" />
+    <meta name="author" content="Binh Tom" />
+    <meta name="Country" content="VietNam " />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- library -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+
+    <!-- chart table -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>binh tom</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="container col-12">
+            <section style="background-image: url('../images/binh.jpg'); height: 1000px;">
+                <header class="header">
+                    <nav>
+                        <ul>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#HOME">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#TOOLS">TOOLS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#PROJECTS">PROJECTS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#EXPERIENCES">EXPERIENCES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#CONTRACT">CONTRACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <section>
+                    <div class="content">
+                        <p><strong>I'm <br> Vũ Hòa Bình.</strong></p>
+                        <h2>I'm student at the University</h2>
+                    </div>
+                </section>
+            </section>
+            <div class="box_intro" id="HOME">
+                <span class="image"><img src="../images/binh.jpg" alt="my photo"/></span>
+                <p>Hello!! My name is Vu Hoa Binh. My nickname is Tom. I'm 19 years old. I'm a sophomore at the uni in VietNam. I was born and raised in DaNang city, a beautiful coastal city.
+                    <br><br><strong> This is my website. (13/11/22) </strong></p>
+                <hr style="border: 1px solid white; margin-left: 25px; margin-right: 25px; margin-top: 90px;margin-bottom: 10px;">
+                <section style="background-color: rgb(74, 73, 71); border-radius: 5px;  margin-left: 170px; margin-right: 170px;">
+                    <ul class="icons">
+                        <li><a href="https://twitter.com/hoabinh1052k3" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/Btomsenior10x/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/btom2k3/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/VuHoaBinh" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="mailto:hoabinh105.work@gmail.com" class="icon brands fa fa-wpforms"><span class="label">Gmail</span></a></li>
+                    </ul>
+                </section>
+            </div>
+            <section style="background-image: url('../images/pic2.jpg'); padding-top: 100px; height: 1400px;">
+                <div class="content_tools" id="TOOLS">
+                    <h1>PROFESSIONAL</h1>
+                    <p>MY KNOWLEDGEMENT LEVELS</p>
+                    <div id="myChart" class="Chart" style="width:100%; max-width:800px; height:500px; margin-top: 60px;"></div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="box_project" id="PROJECTS">
+                    <h1>MY PROJECTS</h1>
+                    <a href="#" class="myProject">SEE MORE ></a>
+
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../images/badminton.jpg" alt="Photo1" width="700" height="500">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="../images/TaylorSwift.jpg" alt="Photo2" width="700" height="500">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/background.jpg" alt="Photo3" width="700" height="500">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section style="background-image: url('../images/background.jpg'); padding-top: 100px; height: 1000px;">
+                <div class="content_exp" id="EXPERIENCES">
+                    <h1>EXPERIENCES</h1>
+                    <p style="color: white; text-align: center;">....</p>
+                </div>
+            </section>
+
+            <div class="box_contract col-12" id="CONTRACT">
+                <article>
+                    <div class="row">
+                        <h2 class="major">CONTRACT</h2>
+                        <form class="text-left" action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="">NAME</label>
+
+                                </div>
+                                <div class="col-6">
+                                    <label for="">EMAIL</label>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" class="form-control " placeholder="Name">
+
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" class="form-control " placeholder="Email">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="">MESSAGE</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row text-left">
+                                <input class="btn btn-primary btn_sent" type="submit" value="Submit">
+                                <input class="btn btn-primary btn_reset" type="reset" value="Reset">
+                            </div>
+                        </form>
+                    </div>
+                </article>
+                <section style="background-color: rgb(74, 73, 71); border-radius: 5px;  margin-left: 150px; margin-right: 170px;">
+                    <ul class="icons">
+                        <li><a href="https://twitter.com/hoabinh1052k3" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://www.facebook.com/Btomsenior10x/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/btom2k3/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/VuHoaBinh" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="mailto:hoabinh105.work@gmail.com" class="icon brands fa fa-wpforms"><span class="label">Gmail</span></a></li>
+                    </ul>
+                </section>
+            </div>
+            <section style="background-image: url('../images/background2.png'); padding-top: 100px; height: 500px;">
+
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p class="footer col-12">HAVE A GOOD DAY</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
