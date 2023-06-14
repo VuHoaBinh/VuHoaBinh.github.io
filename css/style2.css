@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Chart {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.language1 ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.language1 ul li {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.language1 li .base {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid var(--color);
+    border-left: 8px solid transparent;
+    animation: spin 8s linear infinite;
+    filter: drop-shadow(0 0 10px var(--color));
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(60deg) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(60deg) rotateZ(-360deg);
+    }
+}
+
+.language1 li .base::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: var(--color);
+}
+
+.language1 li .base,
+.language1 li .title,
+.language1 li .icon {
+    position: absolute;
+    color: #f8f5f8;
+    transform: rotateX(60deg) rotateZ(-45deg);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.language1 li .title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transform: rotateY(30deg) skewY(-24deg) translateY(0px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.language1 li .icon {
+    display: grid;
+    place-items: center;
+    font-size: 80px;
+    height: 100%;
+    pointer-events: none;
+}
+
+@keyframes wave {
+    0%,
+    100% {
+        margin-bottom: 0;
+    }
+    50% {
+        margin-bottom: 15px;
+    }
+}
+
+.language1 .base:hover {
+    filter: drop-shadow(0 0 10px var(--color));
+    animation-play-state: paused;
+}
+
+.language1 .base:hover+.title+.icon {
+    transform: rotateY(30deg) skewY(-24deg) translateY(-160px);
+    color: var(--color);
+    filter: drop-shadow(0 0 3px var(--color));
+    animation: wave 1s ease-in-out infinite;
+}
+
+.language1 .base:hover+.title {
+    color: var(--color);
+    transform: rotateY(30deg) skewY(-24deg) translateY(-90px);
+    text-shadow: 0 0 3px var(--color);
+    transition-delay: 0.1s;
+    opacity: 1;
+    animation: wave 1s ease-in-out infinite;
+}
+
+
+/* language2 */
+
+.language2 ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-left: -1400px;
+}
+
+.language2 ul li {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.language2 li .base {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid var(--color);
+    border-left: 8px solid transparent;
+    animation: spin 8s linear infinite;
+    filter: drop-shadow(0 0 10px var(--color));
+}
+
+.language2 li .base::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: var(--color);
+}
+
+.language2 li .base,
+.language2 li .title,
+.language2 li .icon {
+    position: absolute;
+    color: #427fef;
+    transform: rotateX(60deg) rotateZ(-45deg);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.language2 li .title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transform: rotateY(30deg) skewY(-24deg) translateY(0px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.language2 li .icon {
+    display: grid;
+    place-items: center;
+    font-size: 80px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.language2 .base:hover {
+    filter: drop-shadow(0 0 10px var(--color));
+    animation-play-state: paused;
+}
+
+.language2 .base:hover+.title+.icon {
+    transform: rotateY(30deg) skewY(-24deg) translateY(-160px);
+    color: var(--color);
+    filter: drop-shadow(0 0 3px var(--color));
+    animation: wave 1s ease-in-out infinite;
+}
+
+.language2 .base:hover+.title {
+    color: var(--color);
+    transform: rotateY(30deg) skewY(-24deg) translateY(-90px);
+    text-shadow: 0 0 3px var(--color);
+    transition-delay: 0.1s;
+    opacity: 1;
+    animation: wave 1s ease-in-out infinite;
+}
+
+
+/* language3 */
+
+.language3 ul {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 100px;
+    margin-left: -1400px;
+}
+
+.language3 ul li {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+.language3 li .base {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid var(--color);
+    border-left: 8px solid transparent;
+    animation: spin 8s linear infinite;
+    filter: drop-shadow(0 0 10px var(--color));
+}
+
+.language3 li .base::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: var(--color);
+}
+
+.language3 li .base,
+.language3 li .title,
+.language3 li .icon {
+    position: absolute;
+    color: #f5f5f5;
+    transform: rotateX(60deg) rotateZ(-45deg);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.language3 li .title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transform: rotateY(30deg) skewY(-24deg) translateY(0px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.language3 li .icon {
+    display: grid;
+    place-items: center;
+    font-size: 80px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.language3 .base:hover {
+    filter: drop-shadow(0 0 10px var(--color));
+    animation-play-state: paused;
+}
+
+.language3 .base:hover+.title+.icon {
+    transform: rotateY(30deg) skewY(-24deg) translateY(-160px);
+    color: var(--color);
+    filter: drop-shadow(0 0 3px var(--color));
+    animation: wave 1s ease-in-out infinite;
+}
+
+.language3 .base:hover+.title {
+    color: var(--color);
+    transform: rotateY(30deg) skewY(-24deg) translateY(-90px);
+    text-shadow: 0 0 3px var(--color);
+    transition-delay: 0.1s;
+    opacity: 1;
+    animation: wave 1s ease-in-out infinite;
+}
+
+
+/* experience */
+
+
+/* section 5 */
+
+.content_exp {
+    position: relative;
+}
+
+.content_exp h1 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 70px;
+}
+
+.experience {
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: -45px;
+    bottom: 0;
+    left: 490px;
+    margin-left: -3px;
+}
+
+
+/* Container around content */
+
+.container_experience {
+    position: relative;
+    width: 40%;
+}
+
+
+/* The circles on the timeline */
+
+.container_experience::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -22px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* Place the container to the left */
+
+.left {
+    left: 0;
+}
+
+
+/* Place the container to the right */
+
+.right {
+    left: 50%;
+}
+
+
+/* Fix the circle for containers on the right side */
+
+.right::after {
+    left: -123px;
+}
+
+
+/* The actual content */
+
+.content_experience {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    left: -56px;
+    top: 18px;
+}
