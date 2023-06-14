@@ -93,7 +93,7 @@
     font-size: 0.8rem;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: rgb(252, 250, 250);
     font-size: 15px;
 }
 
@@ -106,6 +106,17 @@
     background-color: rgba(255, 255, 255, 0.175);
 }
 
+video {
+    margin-top: -171px;
+    margin-right: 5px;
+}
+
+.text-box {
+    position: absolute;
+    top: 12px;
+    left: 299px;
+}
+
 .content {
     padding-top: 200px;
     padding-left: 400px;
@@ -114,6 +125,38 @@
 .content p {
     text-align: left;
     font-size: 100px;
+    margin-left: -280px;
+    color: aliceblue
+}
+
+.animated-word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -280px;
+}
+
+.letter {
+    transition: 0.4s;
+    transform: translateX(0);
+    cursor: grab;
+    color: green;
+    text-align: left;
+    font-size: 100px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.letter:hover {
+    transform: translateY(-1rem);
+    background: -o-repeating-linear-gradient(120deg, hsk(19, 90%, 52%), hsk(56, 100%, 50%));
+    -webkit-text-fill-color: transparent;
+    color: red;
+}
+
+.content h2 {
+    margin-left: -260px;
+    color: aliceblue;
 }
 
 
@@ -130,7 +173,7 @@
     height: 600px;
     width: 700px;
     left: 418px;
-    top: 732px;
+    top: 752px;
     border-radius: 15px;
 }
 
@@ -183,12 +226,9 @@
 }
 
 .icons li a {
-    /* position: absolute; */
     border-radius: 4px;
-    /* width: 43px;
-    height: 43px; */
     top: 1px;
-    left: 40px;
+    left: 20px;
     /* background-color: wheat; */
     padding: 10px;
     text-align: center;
@@ -198,15 +238,12 @@
 
 /* sectionn 3 */
 
-.content_tools {
-    margin-top: 400px;
-}
-
 .content_tools h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     font-size: 90px;
+    padding-top: 750px;
 }
 
 .content_tools p {
@@ -246,18 +283,7 @@
 }
 
 
-/* section 5 */
-
-.content_exp {
-    position: relative;
-}
-
-.content_exp h1 {
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: white;
-    font-size: 70px;
-}
+/* .box_contract */
 
 .box_contract {
     position: absolute;
@@ -265,7 +291,7 @@
     height: 600px;
     width: 700px;
     left: 418px;
-    bottom: 632px;
+    bottom: 32px;
     border-radius: 15px;
 }
 
@@ -277,7 +303,7 @@
     font-weight: bold;
     color: white;
     border-bottom: 3px solid white;
-    /* padding: 5px; */
+    margin-right: 450px;
 }
 
 article label {
@@ -290,8 +316,8 @@ article label {
     color: rgb(21, 21, 21);
     font-weight: bold;
     margin: 10px;
-    margin-left: 15px;
-    background-color: rgb(238, 239, 240);
+    margin-left: 130px;
+    background-color: rgb(161, 161, 161);
 }
 
 .btn_reset {
