@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Pizza Siêu Topping Singapore Cua Xốt Tiêu Đen Mayo",
+    "price": " 284000",
+    "img": "./img/PIZZA+CUA+ST+_2_-removebg-preview.png",
+    "id": "1"
+  },
+  {
+    "name": "Pizza Siêu Topping Singapore Cua Xốt Ớt Singapore",
+    "price": " 284000",
+    "img": "./img/PIZZA+CUA+ST+_1_-removebg-preview.png",
+    "id": "2"
+  },
+  {
+    "name": "Pizza Phô Mai hảo hạng Truyền Thống - Cheese Mania",
+    "price": "87500",
+    "img": "./img/Pizza-Pho-Mai-Hao-Hang-Cheese-Mania-removebg-preview.png",
+    "id": "3"
+  },
+  {
+    "name": "Pizza Dăm Bông Dứa Kiểu Hawaii - Hawaiian",
+    "price": "97500",
+    "img": "./img/Pizza-Dam-Bong-Dua-Kieu-Hawaii-Hawaiian-removebg-preview.png",
+    "id": "4"
+  },
+  {
+    "name": "Pizza Ngập Vị Phô Mai Hảo Hạng - Cheesy Madness",
+    "price": "176000",
+    "img": "./img/CHEESY+MADNESS+NO+NEW+PC-removebg-preview.png",
+    "id": "6"
+  },
+  {
+    "name": "Pizza Rau Củ Thập Cẩm - Veggie Mania",
+    "price": "87500",
+    "img": "./img/Veggie-mania-Pizza-Rau-Cu-Thap-Cam-removebg-preview.png",
+    "id": "7"
+  },
+  {
+    "name": "Pizza Xúc Xích Ý Truyền Thống - Pepperoni Feast",
+    "price": "117000",
+    "img": "./img/Pepperoni-feast-Pizza-Xuc-Xich-Y-removebg-preview.png",
+    "id": "8"
+  },
+  {
+    "name": "Pizza Xúc Xích Xốt Phô Mai - Sausage Kid Mania",
+    "price": "97500",
+    "img": "./img/Sausage-Kid-Mania-1-removebg-preview.png",
+    "id": "9"
+  },
+  {
+    "name": " Pizza New York Bò Beefsteak  - New York Steak",
+    "price": "215500",
+    "img": "./img/Menu+BG+1-removebg-preview.png",
+    "id": "10"
+  },
+  {
+    "name": "Cánh Gà Nướng BBQ (6 miếng)o",
+    "price": " 136500",
+    "img": "./img/MON+PHU+PC_canh+ga-nen+xam_360X240px-removebg-preview.png",
+    "id": "11"
+  },
+  {
+    "name": "Gà Viên Phô Mai Đút Lò",
+    "price": " 68000",
+    "img": "./img/MENU-PC-Gà-Viên-Phô-Mai-Đút-Lò-1-removebg-preview.png",
+    "id": "12"
+  },
+  {
+    "name": "Mỳ Ý Dăm Bông & Nấm Xốt Kem",
+    "price": "87500",
+    "img": "./img/MENU-PC-Mỳ-Ý-Dăm-Bông-_-Nấm-Xốt-Kem-1-removebg-preview.png",
+    "id": "13"
+  },
+  {
+    "name": " Bánh Mì Nướng Bơ Tỏi",
+    "price": "48500",
+    "img": "./img/MENU-PC_Bánh-Mì-Nướng-Bơ-Tỏi-removebg-preview.png",
+    "id": "14"
+  },
+  {
+    "name": "Bánh Mì Nướng Phô Mai",
+    "price": "58000",
+    "img": "./img/MENU-PC_Bánh-Mì-Nướng-Phô-Mai-removebg-preview.png",
+    "id": "17"
+  }
+]
