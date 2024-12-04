@@ -1,0 +1,88 @@
+#pre,
+#next {
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+.nut {
+    width: 120px;
+    display: flex;
+    margin: 10px auto;
+}
+
+#tintuc {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.slider {
+    height: 350px;
+    width: 3000px;
+    flex: 1 0 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    display: flex;
+    
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    15% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    /* 80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    } */
+
+}
+
+.item {
+    width: 2000px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 10px;
+    padding: 5px;
+    /* animation: slide 16s infinite; */
+}
+.item:hover{
+    margin: 5px;
+    box-shadow: 1px 1px 10px gray;
+    transition: all 500ms;
+}
+.banh {
+    width: 80%;
+    margin: auto;
+}

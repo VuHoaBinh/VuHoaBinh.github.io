@@ -1,0 +1,151 @@
+.img-size {
+    width: 80px;
+    height: 80px;
+    display: none;
+}
+
+hr {
+    border-top: 5px solid #6bc4df;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.div-margin {
+    margin-top: 100px;
+}
+
+.gray-c {
+    color: #a3a3ac
+}
+
+.font-small {
+    font-size: small;
+}
+
+@media (min-width: 576px) {
+    .img-size {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .img-size {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-size {
+        display: inline;
+    }
+}
+
+@media (min-width: 1140px) {
+    .img-size {
+        display: inline;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img-size {
+        display: inline;
+    }
+}
+
+.cart-list {
+    height: 118px;
+    line-height: 118px;
+    font-size: 12px;
+}
+
+.order-title {
+    height: 31px;
+    line-height: 31px
+}
+
+.order-title span {
+    padding-left: 35px;
+    padding-right: 10px;
+}
+
+.node ul {
+    z-index: 1;
+    width: 189px;
+    margin-left: -90px;
+}
+
+ul {
+    list-style: none;
+}
+
+.order-process {
+    display: inline-block;
+    margin: 100px 0 100px;
+    width: 100%;
+}
+
+.order-process .done {
+    background-position: 0 -38px;
+}
+
+.proce {
+    position: relative;
+    float: left;
+    width: 124px;
+    height: 9px;
+    left: 8%;
+    background: url(../images/proce-icons.png) no-repeat;
+}
+
+.node {
+    position: relative;
+    top: -17px;
+    float: left;
+    left: 10%;
+    width: 45px;
+    height: 43px;
+}
+
+.node-icon {
+    position: absolute;
+    display: block;
+    left: -15px;
+    top: 0;
+    width: 43px;
+    height: 43px;
+    background: url(../images/node-icons.png) no-repeat;
+    overflow: hidden;
+}
+
+.icon-start {
+    background-position: 0 -108px;
+}
+
+.icon-pay {
+    background-position: -54px -108px;
+}
+
+.icon-store {
+    background-position: -108px -108px;
+}
+
+.icon-express {
+    background-position: -270px -108px;
+}
+
+.icon-finish {
+    background-position: -216px -54px;
+}
+
+.order-info-title {
+    padding-left: 20px;
+}
+
+.order-info-body1 {
+    padding-top: 20px;
+    padding-left: 20px
+}
+
+.order-info-body2 {
+    padding-top: 20px;
+}

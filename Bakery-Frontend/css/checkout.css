@@ -1,0 +1,120 @@
+.col-md-5 p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 20px
+}
+
+#thanhtoan {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    margin-top: 20px
+}
+
+hr {
+    border-color: #000
+}
+
+.col-md-5 input {
+    height: 50px;
+    padding: 10px 20px;
+    background: #D6D5D5;
+    border-radius: 30px;
+    border: 1px;
+    width: 100%;
+}
+
+.col-md-5 div {
+    margin-top: 20px
+}
+
+#info {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 18px;
+    color: #555368;
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+#size {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: justify;
+    color: #555368;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#note {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #555368;
+}
+
+#number {
+    width: 40px;
+    height: 40px;
+    background: #EEEEEE;
+    position: absolute;
+    top: 25px;
+    text-align: center;
+    padding-top: 8px;
+    right: 0px;
+}
+
+button {
+    background: #DF564E;
+    border: 1px;
+    padding: 10px 40px;
+    font-size: 16px;
+    line-height: 23px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.clearfix {
+    margin-top: 350px;
+}
+
+.clearfix p {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #555368;
+}
+
+.text-danger {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 18px;
+    margin-left: 90px;
+}
+
+.clearfix input {
+    background: #D6D5D1;
+    border-radius: 30px;
+    border: 1px;
+    padding: 13px 20px;
+    margin-top: 15px;
+}
+
+.text-warning {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 18px;
+    margin-left: 65px;
+}
+
+.text-info {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 18px;
+    margin-left: 47px;
+}

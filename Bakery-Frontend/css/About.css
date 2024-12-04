@@ -1,0 +1,54 @@
+.title {
+    padding-top: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about1 {
+    margin-left: 10px;
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid blueviolet;
+    box-shadow: 2px 2px 5px violet;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+
+.img1 {
+    /* margin-left: 10px; */
+    border-radius: 20px;
+}
+
+.bg1 {
+    background-color: blueviolet;
+    color: white;
+}
+
+.about2 {
+    text-align: center;
+    margin: auto;
+}
+.gtthanhvien{
+    padding-top: 20px;
+}
+.liTVien {
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    box-shadow: 2px 5px 10px gray;
+}
+
+.thanhvien :hover {
+    border-radius: 50px;
+    transition: all 500ms;
+}
+.liTVien:hover{
+    margin: 50px;
+}
+.thanhvien {
+    width: 50%;
+    margin: auto;
+}
+h4{
+    color: darkblue;
+}

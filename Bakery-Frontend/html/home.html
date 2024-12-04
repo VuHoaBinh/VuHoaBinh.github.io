@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- custom js  -->
+    <script src="../js/ChiTietBanh.js"></script>
+
+    <script src="../js/dangnhap.js"></script>
+</head>
+
+
+<body class="body-fixed">
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <a href="../html/home.html">
+                            <img src="../images/logo.png" width="160" height="36" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="main-navigation">
+                        <button class="menu-toggle"><span></span><span></span></button>
+                        <nav class="header-menu">
+                            <ul class="menu ">
+                                <li><a href="../html/home.html">Home</a></li>
+                                <li><a href="../html/menu.html">Menu</a></li>
+                                <li><a href="../html/news.html">News</a></li>
+                                <li><a href="#">FAQS</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a style="background: white;" href="../html/faq.html">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a style="background: white;" href="../html/contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Summary</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a style="background: white;" href="../html/about.html">About</a>
+                                        </li>
+                                        <li>
+                                            <a style="background: white;" href="../html/Sitemap.html">Sitemap</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Account</a>
+                                    <ul class="submenu">
+                                        <li>
+                                            <a style="background: white;" href="../html/register.html">Register</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-right">
+                            <form action="#" class="header-search-form for-des">
+                                <input type="search" class="form-input" placeholder="Search Here...">
+                                <button type="submit">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </form>
+                            <a href="javascript:void(0)" class="header-btn header-cart" data-toggle='modal' data-target='#shopping-cart'>
+                                <i class="uil uil-shopping-bag"></i>
+                                <span class="cart-number">4</span>
+                            </a>
+                            <a href="javascript:void(0)" class="header-btn" data-toggle='modal' data-target='#login'>
+                                <i class="uil uil-user-md"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header ends  -->
+
+
+
+    <div id="viewport">
+        <div id="js-scroll-content">
+            <!-- start of banner  -->
+            <section class="main-banner" id="home">
+                <div class="js-parallax-scene">
+                    <div class="banner-shape-1 w-100" data-depth="0.30">
+                        <img src="../images/berry.png" alt="">
+                    </div>
+                    <div class="banner-shape-2 w-100" data-depth="0.25">
+                        <img src="../images/cake.png" alt="">
+                    </div>
+                </div>
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="banner-text">
+                                    <h1 class="h1-title">
+                                        Welcome to our
+                                        <span>Cake</span> shop.
+                                    </h1>
+                                    <p>A DELECTABLE JOURNEY OF MYSTERY AND DESIRE</p>
+                                    <div class="banner-btn mt-4">
+                                        <a href="#menu" class="sec-btn">Check our Menu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="banner-img-wp">
+                                    <div class="banner-img" style="background-image: url(../images/main-b.jpg);">
+                                    </div>
+                                </div>
+                                <div class="banner-img-text mt-4 m-auto">
+                                    <p>It’s not too late to end the year with something sweet. skip the line </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- banner ends  -->
+
+
+
+            <section style="background-image: url(../images/menu-bg.png);" class="our-menu section bg-light repeat-img" id="menu">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">our menu</p>
+                                    <h2 class="h2-title">can't decide? take a walk through <span>our full menu and be inspired to try...everything!</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="../images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-tab-wp">
+                            <div class="row">
+                                <div class="col-lg-12 m-auto">
+                                    <div class="menu-tab text-center">
+                                        <ul class="filters">
+                                            <div class="filter-active"></div>
+                                            <li class="filter" data-filter=".all, .BanhSinhNhat, .BanhMacaron, .BanhNgotPhap">
+                                                Tất cả
+                                            </li>
+                                            <li class="filter" data-filter=".BanhSinhNhat">
+                                                Bánh Sinh Nhật
+                                            </li>
+                                            <li class="filter" data-filter=".BanhMacaron">
+                                                Bánh Macaron
+                                            </li>
+                                            <li class="filter" data-filter=".BanhNgotPhap">
+                                                Bánh Ngọt Pháp
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-list-row">
+                            <div class="row g-xxl-5 bydefault_show" id="menu-cake">
+                                <!-- 1 -->
+                                <div class="col-lg-4 col-sm-6 cake-box-wp BanhSinhNhat element" data-cat="BanhSinhNhat">
+                                    <div class="cake-box text-center">
+                                        <div class="cake-img">
+                                            <img src="../images/cake/CORNCHIFFON_01.jpg" alt="" onclick="showDetail(1)">
+                                        </div>
+                                        <div class="cake-title">
+                                            <h3 class="h3-title">Bánh Chiffon Bắp I 14cm</h3>
+                                        </div>
+                                        <div class="cake-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>550.000₫</b>
+                                                </li>
+                                                <li>
+                                                    <button class="cake-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="col-lg-4 col-sm-6 cake-box-wp BanhSinhNhat element" data-cat="BanhSinhNhat">
+                                    <div class="cake-box text-center">
+                                        <div class="cake-img">
+                                            <img src="../images/cake/MATCHA-6INCH.jpg" alt="" onclick="showDetail(2)">
+                                        </div>
+                                        <div class="cake-title">
+                                            <h3 class="h3-title">Bánh Tiramisu Trà Xanh | 16cm</h3>
+                                        </div>
+                                        <div class="cake-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>510.000₫</b>
+                                                </li>
+                                                <li>
+                                                    <button class="cake-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="col-lg-4 col-sm-6 cake-box-wp BanhSinhNhat element" data-cat="BanhSinhNhat">
+                                    <div class="cake-box text-center">
+                                        <div class="cake-img">
+                                            <img src="../images/cake/CARAMEL4INCH.jpg" alt="" onclick="showDetail(3)">
+                                        </div>
+                                        <div class="cake-title">
+                                            <h3 class="h3-title">Bánh Mousse Caramel I 12cm</h3>
+                                        </div>
+                                        <div class="cake-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>395.000₫</b>
+                                                </li>
+                                                <li>
+                                                    <button class="cake-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="col-lg-4 col-sm-6 cake-box-wp BanhMacaron element" data-cat="BanhMacaron">
+                                    <div class="cake-box text-center">
+                                        <div class="cake-img">
+                                            <img src="../images/cake/MACARON_01.jpg" alt="" onclick="showDetail(4)">
+                                        </div>
+                                        <div class="cake-title">
+                                            <h3 class="h3-title">Macaron Lý Chua Đen & Oải Hương</h3>
+                                        </div>
+                                        <div class="cake-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>34.000₫</b>
+                                                </li>
+                                                <li>
+                                                    <button class="cake-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="col-lg-4 col-sm-6 cake-box-wp BanhMacaron element" data-cat="BanhMacaron">
+                                    <div class="cake-box text-center">
+                                        <div class="cake-img">
+                                            <img src="../images/cake/MACARON_02.jpg" alt="" onclick="showDetail(5)">
+                                        </div>
+                                        <div class="cake-title">
+                                            <h3 class="h3-title">Bánh Macaron Phô Mai</h3>
+                                        </div>
+                                        <div class="cake-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>34.000₫</b>
+                                                </li>
+                                                <li>
+                                                    <button class="cake-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 6 -->
+                                <div class="col-lg-4 col-sm-6 cake-box-wp BanhMacaron element" data-cat="BanhMacaron">
+                                    <div class="cake-box text-center">
+                                        <div class="cake-img">
+                                            <img src="../images/cake/MACARON_3.jpg" alt="" onclick="showDetail(6)">
+                                        </div>
+                                        <div class="cake-title">
+                                            <h3 class="h3-title">Bánh Macaron Caramen & Sapoche</h3>
+                                        </div>
+                                        <div class="cake-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>34.000₫</b>
+                                                </li>
+                                                <li>
+                                                    <button class="cake-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 7 -->
+                                <div class="col-lg-4 col-sm-6 cake-box-wp BanhNgotPhap element" data-cat="BanhNgotPhap">
+                                    <div class="cake-box text-center">
+                                        <div class="cake-img">
+                                            <img src="../images/cake/RASPBERRYTIRAMISU1.jpg" alt="" onclick="showDetail(7)">
+                                        </div>
+                                        <div class="cake-title">
+                                            <h3 class="h3-title">Raspberry Tiramisu</h3>
+                                        </div>
+                                        <div class="cake-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>110.000₫</b>
+                                                </li>
+                                                <li>
+                                                    <button class="cake-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- 8 -->
+                                <div class="col-lg-4 col-sm-6 cake-box-wp BanhNgotPhap element" data-cat="BanhNgotPhap">
+                                    <div class="cake-box text-center">
+                                        <div class="cake-img">
+                                            <img src="../images/cake/APEROLSPRITZTART_01.jpg" alt="" onclick="showDetail(8)">
+                                        </div>
+                                        <div class="cake-title">
+                                            <h3 class="h3-title">Bánh Tart Aperol</h3>
+                                        </div>
+                                        <div class="cake-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>99.000₫</b>
+                                                </li>
+                                                <li>
+                                                    <button class="cake-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 9 -->
+                                <div class="col-lg-4 col-sm-6 cake-box-wp BanhNgotPhap element" data-cat="BanhNgotPhap">
+                                    <div class="cake-box text-center">
+                                        <div class="cake-img">
+                                            <img src="../images/cake/SAPODILLACARAMELSAINTHONORE_01.jpg" alt="" onclick="showDetail(9)">
+                                        </div>
+                                        <div class="cake-title">
+                                            <h3 class="h3-title">Bánh Saint-honoré Sa-pô-chê</h3>
+                                        </div>
+                                        <div class="cake-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>95.000₫</b>
+                                                </li>
+                                                <li>
+                                                    <button class="cake-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="book-cake section bg-light">
+                <div class="book-cake-shape">
+                    <img src="../images/table-leaves-shape.png" alt="">
+                </div>
+
+                <div class="book-cake-shape book-cake-shape2">
+                    <img src="../images/table-leaves-shape.png" alt="">
+                </div>
+
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">Đặt bánh</p>
+                                    <h2 class="h2-title">Thời gian đặt bánh</h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="../images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book-cake-info">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4">
+                                    <div class="cake-title text-center">
+                                        <h3>Thứ hai đến thứ năm</h3>
+                                        <p>9:00 - 22:00 </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="call-now text-center">
+                                        <i class="uil uil-phone"></i>
+                                        <a href="#">0369160539</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="cake-title text-center">
+                                        <h3>Thứ sáu đến chủ nhật</h3>
+                                        <p>11::00 - 20:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="gallery">
+                            <div class="col-lg-10 m-auto">
+                                <div class="book-cake-img-slider" id="icon">
+                                    <div class="swiper-wrapper">
+                                        <a href="../images/bt1.jpg" data-fancybox="table-slider" class="book-cake-img back-img swiper-slide" style="background-image: url(../images/bt1.jpg)"></a>
+                                        <a href="../images/bt2.jpg" data-fancybox="table-slider" class="book-cake-img back-img swiper-slide" style="background-image: url(../images/bt2.jpg)"></a>
+                                        <a href="../images/bt3.jpg" data-fancybox="table-slider" class="book-cake-img back-img swiper-slide" style="background-image: url(../images/bt3.jpg)"></a>
+                                        <a href="../images/bt4.jpg" data-fancybox="table-slider" class="book-cake-img back-img swiper-slide" style="background-image: url(../images/bt4.jpg)"></a>
+                                        <a href="../images/bt1.jpg" data-fancybox="table-slider" class="book-cake-img back-img swiper-slide" style="background-image: url(../images/bt1.jpg)"></a>
+                                        <a href="../images/bt2.jpg" data-fancybox="table-slider" class="book-cake-img back-img swiper-slide" style="background-image: url(../images/bt2.jpg)"></a>
+                                        <a href="../images/bt3.jpg" data-fancybox="table-slider" class="book-cake-img back-img swiper-slide" style="background-image: url(../images/bt3.jpg)"></a>
+                                        <a href="../images/bt4.jpg" data-fancybox="table-slider" class="book-cake-img back-img swiper-slide" style="background-image: url(../images/bt4.jpg)"></a>
+                                    </div>
+
+                                    <div class="swiper-button-wp">
+                                        <div class="swiper-button-prev swiper-button">
+                                            <i class="uil uil-angle-left"></i>
+                                        </div>
+                                        <div class="swiper-button-next swiper-button">
+                                            <i class="uil uil-angle-right"></i>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- footer starts  -->
+            <footer class="site-footer" id="contact">
+                <div class="footer section">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="footer-info">
+                                        <div class="footer-logo">
+                                            <a href="../html/home.html">
+                                                <img src="../images/logo.png" alt="">
+                                            </a>
+                                        </div>
+                                        <p>
+                                            Tiệm bánh của chúng tôi lấy mục tiêu QUAN TÂM SỨC KHOẺ CỦA BẠN làm trọng điểm, luôn tận tâm, tận lực cố gắng tối đa cho ra đời những sản phẩm có giá trị dinh dưỡng cao, an toàn vệ sinh thực phẩm để phục vụ khách hàng.
+                                        </p>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-github-alt"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="uil uil-youtube"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="footer-flex-box">
+                                        <div class="footer-table-info">
+                                            <h3 class="h3-title">open hours</h3>
+                                            <ul>
+                                                <li><i class="uil uil-clock"></i> Mon-Thurs : 9am - 22pm</li>
+                                                <li><i class="uil uil-clock"></i> Fri-Sun : 11am - 22pm</li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-menu ">
+                                            <h3 class="h3-title">Links</h3>
+                                            <ul class="column-2">
+                                                <li>
+                                                    <a href="../html/home.html" class="footer-active-menu">Home</a>
+                                                </li>
+                                                <li><a href="../html/about.html">About</a></li>
+                                                <li><a href="../html/menu.html">Menu</a></li>
+                                                <li><a href="../html/news.html">News</a></li>
+                                                <li><a href="../html/faq.html">FAQ</a></li>
+                                                <li><a href="../html/register.html">Register</a></li>
+                                                <li><a href="../html/contact.html">Contact</a></li>
+                                                <li><a href="../html/Sitemap.html">Sitemap</a></li>
+
+                                            </ul>
+                                        </div>
+                                        <div class="footer-menu">
+                                            <h3 class="h3-title">Company</h3>
+                                            <ul>
+                                                <li><a href="#">Terms & Conditions</a></li>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Cookie Policy</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- footer end  -->    
+
+
+        </div>
+    </div>
+
+
+    <div class="modal" id="login">
+        <section class="vh-100 bg-image"
+        style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="card" style="border-radius: 15px;">
+                    <div class="card-body p-5">
+                    <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+                    <form>
+
+                        <div class="form-outline mb-4">
+                        <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example1cg">Your Name</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                        <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example3cg">Your Email</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                        <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example4cg">Password</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                        <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+                        </div>
+
+                        <div class="form-check d-flex justify-content-center mb-5">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                        <label class="form-check-label" for="form2Example3g">
+                            I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+                        </label>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                        <button type="button"
+                            class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"><a href="../html/home.html" style="text-decoration: none;">Register</a></button>
+                        </div>
+
+                        <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#"
+                            class="fw-bold text-body"><u>Login here</u></a></p>
+
+                    </form>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <div class="modal" id="shopping-cart">
+        <div class="modal-dialog modal-lg">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Giỏ hàng</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <table class="">
+                        <tr>
+                            <th>Danh sách sản phẩm</th>
+                            <th>Đơn giá</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="../images/cake/CORNCHIFFON_01.jpg" alt="">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p>Bánh kem</p>
+                                        <p>14cm</p>
+                                        <p>Thêm đồ trang trí: nến, đĩa, bong bóng</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>550.000₫</td>
+                        </tr>
+                    </table>
+                    <h6>
+                        <span style="font-weight: bold; font-size: 18px; line-height: 26px; color: #555368;">
+                            Số lượng: 
+                        </span>
+                        <input type="text" name="" id="" value="4" readonly style=" background: #D6D5D1; border-radius: 30px; border: 1px; padding: 13px 20px; margin-top: 15px;">
+                        <h6>
+                            <span style="font-weight: bold; font-size: 18px; line-height: 26px; color: #555368;">
+                            Mã khuyến mãi: 
+                        </span>
+                            <input type="text" name="" id="" placeholder="Nhập mã ..." style=" background: #D6D5D1; border-radius: 30px; border: 1px; padding: 13px 20px; margin-top: 15px;">
+                        </h6>
+                        <hr>
+                        <h4 class="text-warning">Tổng cộng: 2.200.000₫</h4>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-dark">Xóa giỏ hàng</button>
+                    <button type="button" class="btn btn-dark">
+                        <a href="../html/check-out.html" class="text-light">Tiếp tục</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery  -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+
+
+    <!-- swiper slider  -->
+    <script src="../js/swiper-bundle.min.js"></script>
+
+    <!-- mixitup -- filter  -->
+    <script src="../js/jquery.mixitup.min.js"></script>
+
+    <!-- fancy box  -->
+    <script src="../js/jquery.fancybox.min.js"></script>
+
+    <!-- gsap  -->
+    <script src="../js/gsap.min.js"></script>
+
+    <!-- scroll trigger  -->
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <!-- scroll to plugin  -->
+    <script src="../js/ScrollToPlugin.min.js"></script>
+
+    <!-- smooth scroll  -->
+    <script src="../js/smooth-scroll.js"></script>
+    <!-- custom js  -->
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
