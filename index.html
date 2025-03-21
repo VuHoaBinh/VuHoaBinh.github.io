@@ -9,10 +9,20 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background: linear-gradient(to right, #74ebd5, #acb6e5);
+        background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffdde1);
+        background-size: 400% 400%;
         text-align: center;
         overflow-x: hidden;
         position: relative;
+        animation: gradientShift 10s infinite alternate;
+      }
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
       }
       .container {
         padding: 50px;
@@ -44,91 +54,41 @@
         color: white;
         margin-top: 20px;
       }
-      .content-box {
-        background: white;
-        padding: 20px;
-        margin: 20px auto;
-        width: 60%;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        animation: fadeInUp 1.5s ease-in-out;
-      }
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @keyframes slideDown {
-        from {
-          transform: translateY(-50px);
-          opacity: 0;
-        }
-        to {
-          transform: translateY(0);
-          opacity: 1;
-        }
-      }
-      .animal {
-        position: absolute;
-        width: 60px;
-        height: 60px;
+      .dog {
+        position: fixed;
+        bottom: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+        background: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Collie_Head.jpg")
+          no-repeat center;
         background-size: cover;
-        animation: moveAnimal 10s infinite linear alternate;
+        transform-origin: center;
+        transition: transform 0.1s linear, left 0.1s linear, top 0.1s linear;
+        z-index: 1000;
       }
-      .animal:nth-child(1) {
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg");
-        top: 10%;
-        left: 0;
+      .wave {
+        position: absolute;
+        bottom: 0;
+        width: 200%;
+        height: 150px;
+        background: url("https://upload.wikimedia.org/wikipedia/commons/5/53/Wave.svg");
+        background-size: cover;
+        animation: moveWave 10s infinite linear;
       }
-      .animal:nth-child(2) {
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3e/Blue_crab_on_sand.JPG");
-        top: 30%;
-        left: 10%;
-      }
-      .animal:nth-child(3) {
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/27/Octopus2.jpg");
-        top: 50%;
-        left: 20%;
-      }
-      .animal:nth-child(4) {
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/88/Starfish.jpg");
-        top: 70%;
-        left: 30%;
-      }
-      .animal:nth-child(5) {
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/73/Lionfish_2.JPG");
-        top: 90%;
-        left: 40%;
+      @keyframes moveWave {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
       }
       .bubble {
         position: absolute;
         background: rgba(255, 255, 255, 0.6);
         border-radius: 50%;
         animation: rise 10s infinite ease-in-out;
-      }
-      @keyframes moveAnimal {
-        0% {
-          transform: translateX(0);
-        }
-        50% {
-          transform: translateX(80vw) scale(1.2);
-        }
-        100% {
-          transform: translateX(0);
-        }
       }
       @keyframes rise {
         from {
@@ -140,20 +100,101 @@
           opacity: 1;
         }
       }
+      .glow {
+        animation: glowEffect 3s infinite alternate;
+      }
+      @keyframes glowEffect {
+        from {
+          text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+        }
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+        }
+      }
+      .fox {
+        position: fixed;
+        justify-items: center;
+        justify-content: center;
+        left:45%;
+        width: 150px;
+        height: 150px;
+        background: url("your-fox-image.png") no-repeat center;
+        background-size: contain;
+      }
+
+      /* Mắt */
+      .eye {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background: white;
+        border-radius: 50%;
+        top: 50px;
+        box-shadow: inset 0 0 5px #000;
+      }
+
+      .left-eye {
+        left: 40px;
+      }
+      .right-eye {
+        right: 40px;
+      }
+
+      /* Con ngươi */
+      .pupil {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: black;
+        border-radius: 50%;
+        top: 5px;
+        left: 5px;
+      }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Made by Vũ Hòa Bình</h1>
-      <div class="content-box">
-        <p>Click the button below to download the exam file.</p>
-        <a href="./[SI - Checkpoint] Đề kiểm tra định kỳ 2.docx" download>
-          <button class="button download-button">Download Exam</button>
-        </a>
-        <br /><br />
+    <div class="container" style="text-align: center;">
+      <div class="fox">
+        <div class="eye left-eye">
+          <div class="pupil"></div>
+        </div>
+        <div class="eye right-eye">
+          <div class="pupil"></div>
+        </div>
       </div>
 
-      <div class="content-box">
+      <script>
+        document.addEventListener("mousemove", function (event) {
+          let eyes = document.querySelectorAll(".eye");
+
+          eyes.forEach((eye) => {
+            let eyeRect = eye.getBoundingClientRect();
+            let eyeX = eyeRect.left + eyeRect.width / 2;
+            let eyeY = eyeRect.top + eyeRect.height / 2;
+
+            let deltaX = event.clientX - eyeX;
+            let deltaY = event.clientY - eyeY;
+
+            let angle = Math.atan2(deltaY, deltaX);
+
+            let pupil = eye.querySelector(".pupil");
+            let maxMove = 5;
+
+            let moveX = Math.cos(angle) * maxMove;
+            let moveY = Math.sin(angle) * maxMove;
+
+            pupil.style.transform = `translate(${moveX}px, ${moveY}px)`;
+          });
+        });
+      </script>
+
+      <h1 class="glow">Made by Vũ Hòa Bình</h1>
+      <p>Click the button below to download the exam file.</p>
+      <a href="./[SI - Checkpoint] Đề kiểm tra định kỳ 2.docx" download>
+        <button class="button download-button">Download Exam</button>
+      </a>
+      <br /><br />
+      <div>
         <h2>Lesson Materials</h2>
         <p>Access the lesson content via Google Drive:</p>
         <button
@@ -164,11 +205,8 @@
         </button>
       </div>
     </div>
-    <div class="animal"></div>
-    <div class="animal"></div>
-    <div class="animal"></div>
-    <div class="animal"></div>
-    <div class="animal"></div>
+    <div class="dog" id="dog"></div>
+    <div class="wave"></div>
     <script>
       function createBubbles() {
         for (let i = 0; i < 20; i++) {
@@ -183,6 +221,18 @@
         }
       }
       createBubbles();
+
+      document.addEventListener("mousemove", function (event) {
+        let dog = document.getElementById("dog");
+        let x = event.clientX - 50;
+        let y = event.clientY - 50;
+        let dx = x - dog.offsetLeft;
+        let dy = y - dog.offsetTop;
+        let angle = Math.atan2(dy, dx) * (180 / Math.PI);
+        dog.style.transform = `rotate(${angle}deg)`;
+        dog.style.left = `${x}px`;
+        dog.style.top = `${y}px`;
+      });
     </script>
   </body>
 </html>
