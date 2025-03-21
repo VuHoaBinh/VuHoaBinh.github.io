@@ -7,38 +7,41 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 0;
             padding: 0;
             background: linear-gradient(to right, #74ebd5, #acb6e5);
+            text-align: center;
+            overflow-x: hidden;
         }
         .container {
             padding: 50px;
+            animation: fadeIn 1.5s ease-in-out;
         }
         h1 {
             color: #fff;
             text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            animation: slideDown 1.5s ease-in-out;
         }
-        .download-button, .drive-button {
-            background-color: #4CAF50;
-            color: white;
+        .button {
             padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 8px;
             font-size: 18px;
             border: none;
             cursor: pointer;
-            transition: 0.3s;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
         }
-        .download-button:hover {
-            background-color: #45a049;
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .download-button {
+            background-color: #4CAF50;
+            color: white;
         }
         .drive-button {
             background-color: #4285F4;
+            color: white;
             margin-top: 20px;
-        }
-        .drive-button:hover {
-            background-color: #357ae8;
         }
         .content-box {
             background: white;
@@ -47,6 +50,7 @@
             width: 60%;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            animation: fadeInUp 1.5s ease-in-out;
         }
         ul {
             list-style: none;
@@ -59,6 +63,18 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
     </style>
 </head>
 <body>
@@ -66,13 +82,13 @@
         <h1>Educational Resources - Vũ Hòa Bình</h1>
         <p>Click the button below to download the exam file.</p>
         <a href="./[SI - Checkpoint] Đề kiểm tra định kỳ 2.docx" download>
-            <button class="download-button">Download Exam</button>
+            <button class="button download-button">Download Exam</button>
         </a>
         <br><br>
         <div class="content-box">
             <h2>Lesson Materials</h2>
             <p>Access the lesson content via Google Drive:</p>
-            <button class="drive-button" onclick="window.open('https://drive.google.com/drive/folders/1F6OnVl3iKTmI80kJJ-h559YbHNGih20x?usp=sharing')">Open Lessons</button>
+            <button class="button drive-button" onclick="window.open('https://drive.google.com/drive/folders/1F6OnVl3iKTmI80kJJ-h559YbHNGih20x?usp=sharing')">Open Lessons</button>
         </div>
         <div class="content-box">
             <h2>Recommended Study Topics</h2>
