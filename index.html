@@ -1,98 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vũ Hòa Bình - Education</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #74ebd5, #acb6e5);
-            text-align: center;
-            overflow-x: hidden;
-            position: relative;
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #74ebd5, #acb6e5);
+        text-align: center;
+        overflow-x: hidden;
+        position: relative;
+      }
+      .container {
+        padding: 50px;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+      h1 {
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        animation: slideDown 1.5s ease-in-out;
+      }
+      .button {
+        padding: 12px 25px;
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+      }
+      .button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .download-button {
+        background-color: #4caf50;
+        color: white;
+      }
+      .drive-button {
+        background-color: #4285f4;
+        color: white;
+        margin-top: 20px;
+      }
+      .content-box {
+        background: white;
+        padding: 20px;
+        margin: 20px auto;
+        width: 60%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        animation: fadeInUp 1.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
         }
-        .container {
-            padding: 50px;
-            animation: fadeIn 1.5s ease-in-out;
+        to {
+          opacity: 1;
         }
-        h1 {
-            color: #fff;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-            animation: slideDown 1.5s ease-in-out;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
         }
-        .button {
-            padding: 12px 25px;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-            border-radius: 8px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+        to {
+          opacity: 1;
+          transform: translateY(0);
         }
-        .button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      }
+      @keyframes slideDown {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
         }
-        .download-button {
-            background-color: #4CAF50;
-            color: white;
+        to {
+          transform: translateY(0);
+          opacity: 1;
         }
-        .drive-button {
-            background-color: #4285F4;
-            color: white;
-            margin-top: 20px;
+      }
+      .animal {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-size: cover;
+        animation: moveAnimal 10s infinite linear alternate;
+      }
+      .animal:nth-child(1) {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg");
+        top: 10%;
+        left: 0;
+      }
+      .animal:nth-child(2) {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3e/Blue_crab_on_sand.JPG");
+        top: 30%;
+        left: 10%;
+      }
+      .animal:nth-child(3) {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/27/Octopus2.jpg");
+        top: 50%;
+        left: 20%;
+      }
+      .animal:nth-child(4) {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/88/Starfish.jpg");
+        top: 70%;
+        left: 30%;
+      }
+      .animal:nth-child(5) {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/73/Lionfish_2.JPG");
+        top: 90%;
+        left: 40%;
+      }
+      .bubble {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 50%;
+        animation: rise 10s infinite ease-in-out;
+      }
+      @keyframes moveAnimal {
+        0% {
+          transform: translateX(0);
         }
-        .content-box {
-            background: white;
-            padding: 20px;
-            margin: 20px auto;
-            width: 60%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-            animation: fadeInUp 1.5s ease-in-out;
+        50% {
+          transform: translateX(80vw) scale(1.2);
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        100% {
+          transform: translateX(0);
         }
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes rise {
+        from {
+          transform: translateY(100vh) scale(0.5);
+          opacity: 0;
         }
-        @keyframes slideDown {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+        to {
+          transform: translateY(-10vh) scale(1);
+          opacity: 1;
         }
-        .animal {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg') no-repeat center center / cover;
-            animation: moveAnimal 10s infinite linear;
-        }
-        @keyframes moveAnimal {
-            0% { left: 0; top: 10%; }
-            50% { left: 80%; top: 50%; }
-            100% { left: 0; top: 90%; }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Educational Resources - Vũ Hòa Bình</h1>
+      <h1>Made by Vũ Hòa Bình</h1>
+      <div class="content-box">
         <p>Click the button below to download the exam file.</p>
         <a href="./[SI - Checkpoint] Đề kiểm tra định kỳ 2.docx" download>
-            <button class="button download-button">Download Exam</button>
+          <button class="button download-button">Download Exam</button>
         </a>
-        <br><br>
-        <div class="content-box">
-            <h2>Lesson Materials</h2>
-            <p>Access the lesson content via Google Drive:</p>
-            <button class="button drive-button" onclick="window.open('https://drive.google.com/drive/folders/1F6OnVl3iKTmI80kJJ-h559YbHNGih20x?usp=sharing')">Open Lessons</button>
-        </div>
+        <br /><br />
+      </div>
+
+      <div class="content-box">
+        <h2>Lesson Materials</h2>
+        <p>Access the lesson content via Google Drive:</p>
+        <button
+          class="button drive-button"
+          onclick="window.open('https://drive.google.com/drive/folders/1F6OnVl3iKTmI80kJJ-h559YbHNGih20x?usp=sharing')"
+        >
+          Open Lessons
+        </button>
+      </div>
     </div>
     <div class="animal"></div>
-</body>
+    <div class="animal"></div>
+    <div class="animal"></div>
+    <div class="animal"></div>
+    <div class="animal"></div>
+    <script>
+      function createBubbles() {
+        for (let i = 0; i < 20; i++) {
+          let bubble = document.createElement("div");
+          bubble.className = "bubble";
+          bubble.style.width = `${Math.random() * 20 + 10}px`;
+          bubble.style.height = bubble.style.width;
+          bubble.style.left = `${Math.random() * 100}vw`;
+          bubble.style.animationDuration = `${Math.random() * 5 + 5}s`;
+          bubble.style.animationDelay = `${Math.random() * 3}s`;
+          document.body.appendChild(bubble);
+        }
+      }
+      createBubbles();
+    </script>
+  </body>
 </html>
