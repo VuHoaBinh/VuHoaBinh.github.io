@@ -12,6 +12,7 @@
             background: linear-gradient(to right, #74ebd5, #acb6e5);
             text-align: center;
             overflow-x: hidden;
+            position: relative;
         }
         .container {
             padding: 50px;
@@ -52,17 +53,6 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             animation: fadeInUp 1.5s ease-in-out;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            background: #f8f8f8;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -74,6 +64,18 @@
         @keyframes slideDown {
             from { transform: translateY(-50px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
+        }
+        .animal {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg') no-repeat center center / cover;
+            animation: moveAnimal 10s infinite linear;
+        }
+        @keyframes moveAnimal {
+            0% { left: 0; top: 10%; }
+            50% { left: 80%; top: 50%; }
+            100% { left: 0; top: 90%; }
         }
     </style>
 </head>
@@ -90,16 +92,7 @@
             <p>Access the lesson content via Google Drive:</p>
             <button class="button drive-button" onclick="window.open('https://drive.google.com/drive/folders/1F6OnVl3iKTmI80kJJ-h559YbHNGih20x?usp=sharing')">Open Lessons</button>
         </div>
-        <div class="content-box">
-            <h2>Recommended Study Topics</h2>
-            <ul>
-                <li>Mathematics - Algebra & Geometry</li>
-                <li>Physics - Fundamental Concepts</li>
-                <li>Computer Science - Basics of Programming</li>
-                <li>English - Grammar & Writing Skills</li>
-                <li>Science - Environmental Studies</li>
-            </ul>
-        </div>
     </div>
+    <div class="animal"></div>
 </body>
 </html>
