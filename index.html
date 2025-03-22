@@ -53,6 +53,8 @@
         background-color: #4285f4;
         color: white;
         margin-top: 20px;
+        position: relative;
+        z-index: 10; /* Ensure it's above other elements */
       }
       .dog {
         position: fixed;
@@ -115,10 +117,10 @@
         position: fixed;
         justify-items: center;
         justify-content: center;
-        left:45%;
+        left: 45%;
         width: 150px;
         height: 150px;
-        background: url("your-fox-image.png") no-repeat center;
+        background: url("") no-repeat center;
         background-size: contain;
       }
 
@@ -153,7 +155,7 @@
     </style>
   </head>
   <body>
-    <div class="container" style="text-align: center;">
+    <div class="container" style="text-align: center">
       <div class="fox">
         <div class="eye left-eye">
           <div class="pupil"></div>
@@ -190,11 +192,21 @@
 
       <h1 class="glow">Made by Vũ Hòa Bình</h1>
       <p>Click the button below to download the exam file.</p>
-      <a href="./[SI - Checkpoint] Đề kiểm tra định kỳ 2.docx" download>
-        <button class="button download-button">Download Exam</button>
-      </a>
+      <a
+        id="download-link"
+        href="./[SI - Checkpoint] Đề kiểm tra định kỳ 2.docx"
+        download
+        style="display: none"
+      ></a>
+      <button
+        class="button download-button"
+        onclick="document.getElementById('download-link').click()"
+      >
+        Download Exam
+      </button>
+
       <br /><br />
-      <div>
+      <div style="padding-bottom:20px; z-index: 1">
         <h2>Lesson Materials</h2>
         <p>Access the lesson content via Google Drive:</p>
         <button
@@ -205,8 +217,8 @@
         </button>
       </div>
     </div>
-    <div class="dog" id="dog"></div>
-    <div class="wave"></div>
+    
+    <div class="wave"style="padding-top:20px; z-index: 4;"></div>
     <script>
       function createBubbles() {
         for (let i = 0; i < 20; i++) {
@@ -221,18 +233,6 @@
         }
       }
       createBubbles();
-
-      document.addEventListener("mousemove", function (event) {
-        let dog = document.getElementById("dog");
-        let x = event.clientX - 50;
-        let y = event.clientY - 50;
-        let dx = x - dog.offsetLeft;
-        let dy = y - dog.offsetTop;
-        let angle = Math.atan2(dy, dx) * (180 / Math.PI);
-        dog.style.transform = `rotate(${angle}deg)`;
-        dog.style.left = `${x}px`;
-        dog.style.top = `${y}px`;
-      });
     </script>
   </body>
 </html>
