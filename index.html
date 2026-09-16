@@ -1,271 +1,360 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vũ Hòa Bình - Education</title>
+    <meta
+      name="description"
+      content="Trang cá nhân giáo dục của Vũ Hòa Bình, tổng hợp 3 thư mục tài liệu học tập trên Google Drive."
+    />
+    <title>Vũ Hòa Bình | Education Links</title>
     <style>
+      :root {
+        --ink: #17202a;
+        --muted: #667085;
+        --line: #d8e1ea;
+        --paper: #ffffff;
+        --blue: #2457d6;
+        --green: #15845b;
+        --gold: #c47a19;
+        --bg: #f6f9fc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
       body {
-        font-family: Arial, sans-serif;
         margin: 0;
-        padding: 0;
-        background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffdde1);
-        background-size: 400% 400%;
-        text-align: center;
-        overflow-x: hidden;
-        position: relative;
-        animation: gradientShift 10s infinite alternate;
+        min-height: 100vh;
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background:
+          linear-gradient(135deg, rgba(36, 87, 214, 0.08), transparent 32%),
+          linear-gradient(45deg, rgba(21, 132, 91, 0.1), transparent 36%),
+          var(--bg);
       }
 
-      @keyframes gradientShift {
-        0% {
-          background-position: 0% 50%;
-        }
-        100% {
-          background-position: 100% 50%;
-        }
+      a {
+        color: inherit;
       }
 
-      .container {
-        padding: 50px;
-        animation: fadeIn 1.5s ease-in-out;
+      .page {
+        width: min(1040px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 22px 0 12px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .brand-mark {
+        display: grid;
+        width: 42px;
+        height: 42px;
+        flex: 0 0 auto;
+        place-items: center;
+        border-radius: 12px;
+        color: #fff;
+        font-weight: 850;
+        background: linear-gradient(135deg, var(--blue), var(--green));
+        box-shadow: 0 12px 28px rgba(36, 87, 214, 0.2);
+      }
+
+      .brand strong,
+      .brand span {
+        display: block;
+      }
+
+      .brand strong {
+        font-size: 1rem;
+      }
+
+      .brand span {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .badge {
+        display: inline-flex;
+        min-height: 38px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 14px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--green);
+        font-size: 0.88rem;
+        font-weight: 800;
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      main {
+        padding: 28px 0 42px;
+      }
+
+      .intro {
+        max-width: 760px;
+        margin-bottom: 28px;
       }
 
       h1 {
-        color: #fff;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        animation: slideDown 1.5s ease-in-out;
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 4.6rem);
+        line-height: 0.98;
+        letter-spacing: 0;
       }
 
-      .button {
-        padding: 12px 25px;
-        font-size: 18px;
-        border: none;
-        cursor: pointer;
+      .lead {
+        max-width: 660px;
+        margin: 18px 0 0;
+        color: #475467;
+        font-size: clamp(1rem, 2vw, 1.18rem);
+        line-height: 1.7;
+      }
+
+      .resource-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 16px;
+      }
+
+      .resource-card {
+        display: flex;
+        min-height: 310px;
+        flex-direction: column;
+        padding: 26px;
+        border: 1px solid var(--line);
         border-radius: 8px;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 18px 42px rgba(23, 32, 42, 0.08);
         transition:
-          transform 0.3s ease-in-out,
-          box-shadow 0.3s;
+          border-color 180ms ease,
+          transform 180ms ease,
+          box-shadow 180ms ease;
       }
 
-      .button:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      .resource-card:hover,
+      .resource-card:focus-visible {
+        border-color: rgba(36, 87, 214, 0.48);
+        outline: none;
+        transform: translateY(-4px);
+        box-shadow: 0 26px 58px rgba(23, 32, 42, 0.14);
       }
 
-      .download-button {
-        background-color: #4caf50;
-        color: white;
+      .resource-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
       }
 
-      .drive-button {
-        background-color: #4285f4;
-        color: white;
-        margin-top: 20px;
-        position: relative;
-        z-index: 10;
-        /* Ensure it's above other elements */
+      .resource-icon {
+        display: grid;
+        width: 58px;
+        height: 58px;
+        flex: 0 0 auto;
+        place-items: center;
+        border-radius: 16px;
+        color: #fff;
+        font-size: 1.55rem;
+        font-weight: 900;
       }
 
-      .dog {
-        position: fixed;
-        bottom: 50px;
-        left: 50px;
-        width: 100px;
-        height: 100px;
-        background: url("https://upload.wikimedia.org/wikipedia/commons/d/d9/Collie_Head.jpg")
-          no-repeat center;
-        background-size: cover;
-        transform-origin: center;
-        transition:
-          transform 0.1s linear,
-          left 0.1s linear,
-          top 0.1s linear;
-        z-index: 1000;
+      .resource-label {
+        color: var(--muted);
+        font-size: 0.86rem;
+        font-weight: 800;
+        text-transform: uppercase;
       }
 
-      .wave {
-        position: absolute;
-        bottom: 0;
-        width: 200%;
-        height: 150px;
-        background: url("https://upload.wikimedia.org/wikipedia/commons/5/53/Wave.svg");
-        background-size: cover;
-        animation: moveWave 10s infinite linear;
+      .resource-card:nth-child(1) .resource-icon {
+        background: var(--blue);
       }
 
-      @keyframes moveWave {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
+      .resource-card:nth-child(2) .resource-icon {
+        background: var(--green);
       }
 
-      .bubble {
-        position: absolute;
-        background: rgba(255, 255, 255, 0.6);
-        border-radius: 50%;
-        animation: rise 10s infinite ease-in-out;
+      .resource-card:nth-child(3) .resource-icon {
+        background: var(--gold);
       }
 
-      @keyframes rise {
-        from {
-          transform: translateY(100vh) scale(0.5);
-          opacity: 0;
-        }
-        to {
-          transform: translateY(-10vh) scale(1);
-          opacity: 1;
-        }
+      .resource-card h2 {
+        margin: 28px 0 12px;
+        font-size: 1.35rem;
+        letter-spacing: 0;
       }
 
-      .glow {
-        animation: glowEffect 3s infinite alternate;
+      .resource-card p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.65;
       }
 
-      @keyframes glowEffect {
-        from {
-          text-shadow:
-            0 0 10px #fff,
-            0 0 20px #ff00ff,
-            0 0 30px #ff00ff;
-        }
-        to {
-          text-shadow:
-            0 0 20px #fff,
-            0 0 30px #00ffff,
-            0 0 40px #00ffff;
-        }
-      }
-
-      .fox {
-        position: fixed;
-        justify-items: center;
+      .open {
+        display: inline-flex;
+        width: 100%;
+        min-height: 52px;
+        align-items: center;
         justify-content: center;
-        left: 45%;
-        width: 150px;
-        height: 150px;
-        background: url("") no-repeat center;
-        background-size: contain;
-      }
-      /* Mắt */
-
-      .eye {
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        background: white;
-        border-radius: 50%;
-        top: 50px;
-        box-shadow: inset 0 0 5px #000;
+        margin-top: auto;
+        border-radius: 12px;
+        color: #fff;
+        font-weight: 850;
+        background: var(--ink);
       }
 
-      .left-eye {
-        left: 40px;
+      .quick-note {
+        margin: 26px 0 0;
+        padding: 18px 20px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: #475467;
+        line-height: 1.65;
+        background: rgba(255, 255, 255, 0.72);
       }
 
-      .right-eye {
-        right: 40px;
+      footer {
+        padding: 24px 0 34px;
+        color: var(--muted);
+        text-align: center;
       }
-      /* Con ngươi */
 
-      .pupil {
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background: black;
-        border-radius: 50%;
-        top: 5px;
-        left: 5px;
+      @media (max-width: 860px) {
+        .resource-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .resource-card {
+          min-height: 250px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .page {
+          width: min(100% - 24px, 1040px);
+        }
+
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .badge {
+          width: 100%;
+        }
+
+        main {
+          padding-top: 18px;
+        }
+
+        .resource-card {
+          padding: 22px;
+        }
       }
     </style>
   </head>
-
   <body>
-    <div class="container" style="text-align: center">
-      <div class="fox">
-        <div class="eye left-eye">
-          <div class="pupil"></div>
-        </div>
-        <div class="eye right-eye">
-          <div class="pupil"></div>
+    <header class="page topbar">
+      <div class="brand" aria-label="Vũ Hòa Bình Education">
+        <div class="brand-mark">VB</div>
+        <div>
+          <strong>Vũ Hòa Bình</strong>
+          <span>Education links</span>
         </div>
       </div>
+      <div class="badge">3 Google Drive links</div>
+    </header>
 
-      <script>
-        document.addEventListener("mousemove", function (event) {
-          let eyes = document.querySelectorAll(".eye");
+    <main class="page">
+      <section class="intro" aria-labelledby="page-title">
+        <h1 id="page-title">Tài liệu học tập</h1>
+        <p class="lead">
+          Chọn một trong ba thư mục bên dưới để mở nhanh tài liệu, bài học hoặc
+          nội dung ôn tập trên Google Drive.
+        </p>
+      </section>
 
-          eyes.forEach((eye) => {
-            let eyeRect = eye.getBoundingClientRect();
-            let eyeX = eyeRect.left + eyeRect.width / 2;
-            let eyeY = eyeRect.top + eyeRect.height / 2;
-
-            let deltaX = event.clientX - eyeX;
-            let deltaY = event.clientY - eyeY;
-
-            let angle = Math.atan2(deltaY, deltaX);
-
-            let pupil = eye.querySelector(".pupil");
-            let maxMove = 5;
-
-            let moveX = Math.cos(angle) * maxMove;
-            let moveY = Math.sin(angle) * maxMove;
-
-            pupil.style.transform = `translate(${moveX}px, ${moveY}px)`;
-          });
-        });
-      </script>
-
-      <h1 class="glow">Made by Vũ Hòa Bình</h1>
-      <p>Click the button below to download the exam file.</p>
-      <a
-        id="download-link"
-        href="./[JSA - Checkpoint 2].docx"
-        download
-        style="display: none"
-      ></a>
-      <button
-        class="button download-button"
-        onclick="document.getElementById('download-link').click()"
-      >
-        Download Exam
-      </button>
-
-      <br /><br />
-      <div style="padding-bottom: 20px; z-index: 1">
-        <h2>Lesson Materials</h2>
-        <p>Access the lesson content via Google Drive:</p>
-        <button
-          class="button drive-button"
-          onclick="
-            window.open(
-              'https://drive.google.com/drive/folders/1Q37GIuLUvZwHQXEM4UTCk4Ct4CHc4rJg?usp=drive_link',
-            )
-          "
+      <section class="resource-grid" aria-label="Danh sách thư mục học tập">
+        <a
+          class="resource-card"
+          href="https://drive.google.com/drive/folders/18IPp4GhGZfjMom51DO_PAcEBhV4BlH50?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Open Lessons
-        </button>
-      </div>
-    </div>
+          <div class="resource-top">
+            <div class="resource-icon">1</div>
+            <span class="resource-label">Drive link</span>
+          </div>
+          <h2>Drones</h2>
+          <p>
+            Tài liệu và nội dung học liên quan đến drones, dự án thực hành và
+            file tham khảo.
+          </p>
+          <span class="open">Mở Drones</span>
+        </a>
 
-    <div class="wave" style="padding-top: 20px; z-index: 4"></div>
-    <script>
-      function createBubbles() {
-        for (let i = 0; i < 20; i++) {
-          let bubble = document.createElement("div");
-          bubble.className = "bubble";
-          bubble.style.width = `${Math.random() * 20 + 10}px`;
-          bubble.style.height = bubble.style.width;
-          bubble.style.left = `${Math.random() * 100}vw`;
-          bubble.style.animationDuration = `${Math.random() * 5 + 5}s`;
-          bubble.style.animationDelay = `${Math.random() * 3}s`;
-          document.body.appendChild(bubble);
-        }
-      }
-      createBubbles();
-    </script>
+        <a
+          class="resource-card"
+          href="https://drive.google.com/drive/folders/1x4-yfUeQFYag9cCvihYLQhjrbbInbLTR?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="resource-top">
+            <div class="resource-icon">2</div>
+            <span class="resource-label">Drive link</span>
+          </div>
+          <h2>Luyện thi tin học trẻ</h2>
+          <p>
+            Tài liệu ôn luyện, bài tập và nội dung chuẩn bị cho kỳ thi tin học
+            trẻ.
+          </p>
+          <span class="open">Mở tài liệu luyện thi</span>
+        </a>
+
+        <a
+          class="resource-card"
+          href="https://drive.google.com/drive/folders/1Q37GIuLUvZwHQXEM4UTCk4Ct4CHc4rJg?usp=drive_link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="resource-top">
+            <div class="resource-icon">3</div>
+            <span class="resource-label">Drive link</span>
+          </div>
+          <h2>MindX Thầy Bình</h2>
+          <p>
+            Lesson materials, bài tập và tài liệu học theo từng buổi tại MindX.
+          </p>
+          <span class="open">Mở MindX Thầy Bình</span>
+        </a>
+      </section>
+
+      <p class="quick-note">
+        Mẹo nhỏ: nếu không mở được tài liệu, hãy kiểm tra quyền truy cập của
+        thư mục Google Drive trước khi chia sẻ trang cho người khác.
+      </p>
+    </main>
+
+    <footer class="page">Made by Vũ Hòa Bình | Education</footer>
   </body>
 </html>
